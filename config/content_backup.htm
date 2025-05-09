@@ -204,7 +204,7 @@
 <p>Webots是什麼?</p>
 <p class="" data-end="272" data-start="73">webots 是一套專門用來模擬行動機器人的軟體，它就像一個虛擬的機器人實驗室，可以快速幫助你設計、測試與改良機器人。你可以在裡面建構出具有真實物理特性的 3D 世界，加入各種物品與機器人，然後替機器人加裝感測器（像是攝影機、距離感測器等）和致動器（像是輪子、馬達等），再透過程式讓它們執行你想要的動作。Webots 也支援把模擬結果轉移到實體機器人上使用，例如 e-puck 或 Nao。</p>
 <hr class="" data-end="277" data-start="274"/>
-<h3 data-end="298" data-start="279">Webots可以做什麼?</h3>
+<p>Webots可以做什麼?</p>
 <p class="" data-end="336" data-start="300">Webots 很適合用來進行機器人領域的研究與教學。它的應用很廣，例如：</p>
 <ul data-end="467" data-start="338">
 <li class="" data-end="363" data-start="338">
@@ -224,8 +224,8 @@
 </li>
 </ul>
 <hr class="" data-end="472" data-start="469"/>
-<h3 data-end="496" data-start="474">使用 Webots 需要懂什麼？</h3>
-<p class="" data-end="533" data-start="498">要使用 Webots 來寫控制機器人的程式，建議對以下語言有基本了解：</p>
+<p>使用 Webots 需要懂什麼？</p>
+<p>要使用 Webots 來寫控制機器人的程式，建議對以下語言有基本了解：</p>
 <ul data-end="565" data-start="535">
 <li class="" data-end="565" data-start="535">
 <p class="" data-end="565" data-start="537"><strong data-end="565" data-start="537">C、C++、Java、Python、MATLAB</strong></p>
@@ -233,7 +233,7 @@
 </ul>
 <p class="" data-end="686" data-start="567">如果是新手，也可以使用 Webots 內建的圖形化程式語言 BotStudio（目前適用於部分機器人如 e-puck）。如果你想設計自己的機器人模型或場景，建議懂一些 3D 圖形概念與 <strong data-end="673" data-start="660">VRML97 語法</strong>，這樣可以自訂外觀和結構。</p>
 <hr class="" data-end="691" data-start="688"/>
-<h3 data-end="708" data-start="693">要去哪裡找幫助？</h3>
+<p>要去哪裡找幫助？</p>
 <p class="" data-end="726" data-start="710">Webots 提供兩種支援方式：</p>
 <ul data-end="910" data-start="728">
 <li class="" data-end="756" data-start="728">
@@ -258,7 +258,7 @@
 </li>
 </ul>
 <hr class="" data-end="915" data-start="912"/>
-<h3 data-end="939" data-start="917">Webots 模擬是怎麼組成的？</h3>
+<p>Webots 模擬是怎麼組成的？</p>
 <p class="" data-end="959" data-start="941">一個 Webots 模擬專案會包含：</p>
 <ul data-end="1066" data-start="961">
 <li class="" data-end="991" data-start="961">
@@ -275,13 +275,13 @@
 </li>
 </ul>
 <hr class="" data-end="1071" data-start="1068"/>
-<h3 data-end="1087" data-start="1073">什麼是「世界」？</h3>
+<p>什麼是「世界」？</p>
 <p class="" data-end="1218" data-start="1089">在 Webots 裡，「世界」就是一個 3D 場景設定，定義了機器人和所有物件的樣貌、位置和物理特性。這些設定儲存在 <code data-end="1154" data-start="1148">.wbt</code> 檔案中，是一種層級式的描述方式（結構有點像 VRML97）。這個檔案會指定每個機器人要用哪個控制程式，但不包含實際的程式內容。</p>
 <hr class="" data-end="1223" data-start="1220"/>
-<h3 data-end="1243" data-start="1225">什麼是「控制器」？</h3>
+<p>什麼是「控制器」？</p>
 <p class="" data-end="1391" data-start="1245">控制器就是你寫給機器人的「大腦」，用來控制它怎麼移動、感測、決策。每個控制器是獨立的程式，Webots 會在模擬一開始時自動為每個機器人開一個控制器進程。控制器可以用 <strong data-end="1359" data-start="1329">C/C++、Java、Python 或 MATLAB</strong> 撰寫，放在專案資料夾裡的 <code data-end="1386" data-start="1373">controllers</code> 目錄中。</p>
 <hr class="" data-end="1396" data-start="1393"/>
-<h3 data-end="1416" data-start="1398">什麼是「監督控制器」？</h3>
+<p>什麼是「監督控制器」？</p>
 <p class="" data-end="1552" data-start="1418">如果你想讓某個控制器有更高的權限，例如操控整個模擬、直接移動機器人或錄影，那就可以設定它為「<strong data-end="1485" data-start="1464">監督控制器（Supervisor）</strong>」。只要在機器人設定中把 <code data-end="1510" data-start="1498">supervisor</code> 欄位設成 TRUE，就可以讓它進行這些高階操作。監督控制器同樣也支援所有語言撰寫。</p>
 </div>
 </div>
